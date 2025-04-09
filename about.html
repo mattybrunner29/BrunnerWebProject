@@ -11,57 +11,65 @@
         <h1 class="username">About Me</h1>
         <img class="profile-pic" src="pfp.jpg" alt="ImpulseSMH">
         
-        <p>Hey! I’m <b>Impulse</b>, a content creator and streamer passionate about Valorant, Minecraft, and horror games! 🎮🚀</p>
-        
-        <p>Catch me live on Twitch and check out my latest videos on YouTube and Tiktok! Let’s build an awesome community together! 💙</p>
-        
+        <p>Hey! I’m <b>Impulse</b>, a content creator and streamer passionate about Valorant, Minecraft, and horror games!</p>
+        <p>Catch me live on Twitch and check out my latest videos on YouTube and Tiktok! Let’s build an awesome community together!</p>
         <a class="button" href="index.html">← Back to Home</a>
+
+        <h2>Upcoming Streams</h2>
+        <p>Check out my upcoming streams and be sure to tune in!</p>
+        <table>
+            <tr>
+                <th>Stream Name</th>
+                <th>Date & Time</th>
+                <th>Platform</th>
+                <th>Game</th>
+            </tr>
+            <tr>
+                <td>Valorant Madness</td>
+                <td>March 15, 7:00 PM</td>
+                <td>Twitch</td>
+                <td>Valorant</td>
+            </tr>
+            <tr>
+                <td>Minecraft Adventures</td>
+                <td>March 18, 5:00 PM</td>
+                <td>YouTube</td>
+                <td>Minecraft</td>
+            </tr>
+            <tr>
+                <td>Horror Night</td>
+                <td>March 20, 9:00 PM</td>
+                <td>Twitch</td>
+                <td>Phasmophobia</td>
+            </tr>
+        </table>
+
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="valorant.jpg" alt="Valorant">
+            <img src="minecraft.png" alt="Minecraft">
+            <img src="phasmophobia.png" alt="Phasmophobia">
+        </div>
+
+        <h2>About Streaming</h2>
+        <details>
+            <summary>What do you stream?</summary>
+            <p>I stream first-person shooters, sandbox games like Minecraft, and horror survival titles. I also do just chatting and community nights!</p>
+        </details>
+
+        <h2>Contact Me</h2>
+        <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
     </div>
-
-    <h2>Upcoming Streams</h2>
-    <p>Check out my upcoming streams and be sure to tune in!</p>
-    
-    <table>
-        <tr>
-            <th>Stream Name</th>
-            <th>Date & Time</th>
-            <th>Platform</th>
-            <th>Game</th>
-        </tr>
-        <tr>
-            <td>Valorant Madness</td>
-            <td>March 15, 7:00 PM</td>
-            <td>Twitch</td>
-            <td>Valorant</td>
-        </tr>
-        <tr>
-            <td>Minecraft Adventures</td>
-            <td>March 18, 5:00 PM</td>
-            <td>YouTube</td>
-            <td>Minecraft</td>
-        </tr>
-        <tr>
-            <td>Horror Night</td>
-            <td>March 20, 9:00 PM</td>
-            <td>Twitch</td>
-            <td>Phasmophobia</td>
-        </tr>
-    </table>
-
-    <h2>Contact Me</h2>
-    <p>Have a question or just want to say hi? Fill out the form below!</p>
-
-    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
 </body>
 </html>

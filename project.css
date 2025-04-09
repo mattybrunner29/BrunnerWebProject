@@ -158,3 +158,37 @@ form button:hover {
     margin-bottom: 10px;
     text-align: left;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+details {
+  background-color: #1f2a44;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+summary {
+  font-weight: bold;
+  color: #D6001C;
+  cursor: pointer;
+}

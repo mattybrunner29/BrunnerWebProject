@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-<meta name="description" content="Learn more about ImpulseSMH, a content creator passionate about gaming. Join me for streams on Twitch and YouTube, and check out upcoming gaming events.">
-
+    <meta name="description" content="Learn more about ImpulseSMH, a content creator passionate about gaming. Join me for streams on Twitch and YouTube, and check out upcoming gaming events.">
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
@@ -60,7 +59,7 @@
         </details>
 
         <h2>Contact Me</h2>
-        <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+        <form name="contactForm" action="https://webdevbasics.net/scripts/demo.php" method="post" onsubmit="return validateForm();">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -73,5 +72,26 @@
             <input type="submit" value="Send Message">
         </form>
     </div>
+
+    <script>
+        function validateForm() {
+            let name = document.forms["contactForm"]["name"].value;
+            let email = document.forms["contactForm"]["email"].value;
+            let message = document.forms["contactForm"]["message"].value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill out all fields before submitting.");
+                return false;
+            }
+
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
